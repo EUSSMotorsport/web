@@ -158,15 +158,23 @@
   overflow: hidden; /* O "auto" si vols scroll horitzontal */
   height: auto;
 }
-
+.main-sponsor a {
+  flex: 1 1 0;
+  min-width: 40px;
+  min-height: 20px;
+}
 .main-sponsor img {
   width: clamp(80px, 15vw, 200px);
   height: auto;
-  max-height: 70px;
+  max-height: 90px;
   object-fit: contain;
   flex: 1 1 0;
   min-width: 40px;
   min-height: 20px;
+  transition: all 0.3s ease;
+}
+.main-sponsor img:hover {
+  scale: calc(1.05);
   transition: all 0.3s ease;
 }
 
@@ -266,6 +274,12 @@ header {
   height: 30px;
   display: inline-block;
   margin-right: 1rem;
+  transition: scale 0.3s ease;
+}
+
+.footer-social a:hover img {
+  scale: calc(1.05);
+  transition: scale 0.3s ease;
 }
 
 /* Columna dreta */
@@ -377,6 +391,11 @@ header {
         font-size: 1.5rem;
         line-height: 1.5;
     }
+    .pdf {
+        width: 100%;
+        height: 600px;
+        border: none;
+    }
 
 .fonsblanc {
         position: relative;
@@ -439,6 +458,19 @@ header {
             font-size: 1.2rem;
             line-height: 1.5;
         }
+        .textfoto .txt a{
+            color: #0a594d;
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            transition: color 0.3s ease;
+        }
+        .textfoto .txt a:hover{
+            color: #4fc3b1;
+            transition: color 0.3s ease;
+        }
         .textfoto .txt .logo {
             margin-top: 1rem;
             gap: 3rem;
@@ -455,19 +487,46 @@ header {
         }
 
     .textfoto .img {
-        flex: 1;
+        flex: 0 0 45%;
         display: flex;            /* ara sí que fem servir flex per centrar la foto */
         justify-content: center;
         align-items: center;
         padding-right: 2rem;
         overflow: hidden;
+        
     }
 
     .textfoto .img img {
-        max-width: 100%;
+        border-radius: 20px;
+        width: 100%;   /* límit real en pantalles grans */
         height: auto;
+        max-height: 500px;
+        object-fit: contain; 
+    }
+
+    .textfoto .imgv {
+        flex: 0 0 45%;
+        display: flex;            /* ara sí que fem servir flex per centrar la foto */
+        justify-content: center;
+        align-items: center;
+        padding-right: 2rem;
+        overflow: hidden;
+        
+    }
+
+    .textfoto .imgv img {
+        width: auto;        /* clau */
+        height: 100%;       /* clau */
+        max-height: 550px;
         border-radius: 20px;
     }
+
+    @media (min-width: 1920px) {
+    .textfoto .img img {
+        max-width: 750px;
+        max-height: 600px;
+    }
+}
 
 .graellasponsors{
   display: grid;
@@ -538,11 +597,11 @@ header {
 
 
 .logocompeti img{
-        display: flexbox;
+        display: flex;
         height: auto;
         max-width: 150px;
         object-fit: cover;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
     }
     .logocompeti img:hover {
         transform: scale(1.05);
@@ -577,13 +636,13 @@ header {
       margin-top: 0.5rem;
       width: 24px;
       height: 24px;
-      transition: filter 0.3s ease;
+      transition: scale 0.3s ease;
       border-radius: 0px;
       border: none;
         }
     .membre .linkedin:hover {
-        filter: brightness(0.8);
-        transition: filter 0.3s ease;
+        scale: calc(1.05);
+        transition: scale 0.3s ease;
       }
 
 
@@ -612,3 +671,16 @@ header {
             .main-menu, .language-menu { display: none; }
             .main-menu.active, .language-menu.active { display: block; }
         }
+
+.video-full {
+    width: 100%;
+    height: 60vh; /* o 100vh */
+    overflow: hidden;
+}
+
+.background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
