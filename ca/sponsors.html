@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <title>Sponsors | EUSS Motorsport</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../img/logoweb.png">
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="../img/logoblanc.png" alt="Logotip de l'equip" class="logo">
+    </a>
+    <nav>
+        <div class="menu-container">
+            <ul class="main-menu">
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="equip.html">Equip</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="historia.html">Història</a></li>
+            </ul>
+
+            <ul class="language-menu">
+                <li><a href="sponsors.html"><img src="../img/catala.png" height="15" alt="Català"></a></li>
+                <!--<li><a href="../es/sponsors.html"><img src="../img/castella.png" height="15" alt="Español"></a></li>-->
+                <li><a href="../en/sponsors.html"><img src="../img/angles.png" height="15" alt="English"></a></li>
+            </ul>
+        </div>
+        <button class="menu-toggle" aria-label="Obre el menú" style="display:none;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+</header>
+<div class="rectangle">
+    <button class="close-menu" aria-label="Tanca el menú">✕</button>
+    <ul class="side-lang">
+          <li><a href="sponsors.html"><img src="../img/catala.png" height="20" alt="Català"></a></li>
+          <!--<li><a href="../es/sponsors.html"><img src="../img/castella.png" height="20" alt="Español"></a></li>-->
+          <li><a href="../en/sponsors.html"><img src="../img/angles.png" height="20" alt="English"></a></li>
+    </ul>
+    <ul class="side-pages">
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="equip.html">Equip</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="historia.html">Història</a></li>
+    </ul>
+</div>
+
+<script>
+const toggleBtn   = document.querySelector('.menu-toggle');
+const rectangle   = document.querySelector('.rectangle');
+const closeBtn    = document.querySelector('.close-menu');
+
+// Obrir / tancar amb el botó principal
+toggleBtn.addEventListener('click', () => {
+    rectangle.classList.toggle('active');
+});
+
+// Tancar amb la creu
+closeBtn.addEventListener('click', () => {
+    rectangle.classList.remove('active');
+});
+
+// Si s’amplia la finestra a desktop, s’oculta el menú
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 800) {
+        rectangle.classList.remove('active');
+    }
+});
+</script>
+<main> 
+    <section class="fotopaginafiltre">
+        <h1>Els nostres patrocinadors</h1>
+        <img src="../img/sponsorspage.jpg" width="100%" height="auto">
+    </section>
+
+    <section class="fonsverd">
+        <p>Els patrocinadors són escencials a la Formula Student, ja que ens donen els recursos possibles per poder plasmar les nostres idees i coneixament al monoplaça.</p>
+    </section>
+
+    <section class="fonsblanc">
+        <h1>Patrocinador Principal</h1>
+        <div class="graellasponsors">
+            <div class="mainsponsor">
+                <a href="https://www.euss.cat/" target="_blank">
+                <img src="../img/logotips/euss.png" alt="Logo EUSS">
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="fonsblanc">
+        <h1>Patrocinadors de Diamant</h1>
+        <div class="graellasponsors">
+            <div class="mainsponsor">
+                <a href="https://www.purepcb.co.uk/" target="_blank">
+                <img src="../img/logotips/purepcb.png" alt="Logo PurePCB">
+            </a>
+            </div>
+            <div class="mainsponsor">
+                <a href="https://www.ctengineeringgroup.com/" target="_blank">
+                <img src="../img/logotips/ctingenieros.png" alt="Logo CT">
+            </a>
+            </div>
+            <div class="mainsponsor">
+                <a href="https://www.lemo.com/" target="_blank">
+                <img src="../img/logotips/lemo.png" alt="Logo LEMO">
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="fonsblanc">
+        <h1>Patrocinador de Or</h1>
+        <div class="graellasponsors">
+            <div class="gransponsor">
+                <a href="https://wattius.com/" target="_blank">
+                <img src="../img/logotips/wattius.png" alt="Logo Wattius">
+            </a>
+            </div>
+            <div class="gransponsor">
+                <a href="https://www.jbctools.com/" target="_blank">
+                <img src="../img/logotips/jbc.png" alt="Logo JBC">
+            </a>
+            </div>
+            <div class="gransponsor">
+                <a href="https://www.eplan-software.com/" target="_blank">
+                <img src="../img/logotips/eplan.png" alt="Logo EPLAN">
+            </a>
+            </div>
+            <div class="gransponsor">
+                <a href="https://www.simscale.com/" target="_blank">
+                <img src="../img/logotips/simscale.png" alt="Logo Simscale">
+            </a>
+            </div>
+            <div class="gransponsor">
+                <a href="https://www.batemo.com/" target="_blank">
+                <img src="../img/logotips/batemo.png" alt="Logo Batemo">
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="fonsblanc">
+        <h1>Patrocinador de Plata</h1>
+        <div class="graellasponsors">
+            <div class="mitjasponsor">
+                <a href="http://www.starcke.es/" target="_blank">
+                <img src="../img/logotips/starcke.png" alt="Logo Starke">
+            </a>
+            </div>
+            <div class="mitjasponsor">
+                <a href="https://www.molex.com/" target="_blank">
+                <img src="../img/logotips/molex.png" alt="Logo Molex">
+            </a>
+            </div>
+            <div class="mitjasponsor">
+                <a href="https://www.bender.de/en/" target="_blank">
+                <img src="../img/logotips/bender.png" alt="Logo bender">
+            </a>
+            </div>
+            <div class="mitjasponsor">
+                <a href="https://www.guemisa.com/" target="_blank">
+                <img src="../img/logotips/guemisa.png" alt="Logo Guemisa">
+            </a>
+            </div>
+            <div class="mitjasponsor">
+                <a href="https://www.asorcad.es/" target="_blank">
+                <img src="../img/logotips/asorcad.png" alt="Logo Asorcad">
+            </a>
+            </div>
+        </div>
+    </section>
+    <section class="fonsblanc">
+        <h1>Patrocinador de Bronze</h1>
+        <div class="graellasponsors">
+            <div class="petitsponsor">
+                <a href="" target="_blank">
+                <img src="../img/logotips/fyk.png" alt="Logo FYK">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://shop.alphacool.com/shop/" target="_blank">
+                <img src="../img/logotips/alphacool.png" alt="Logo AlphaCool">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://amphenol.com/" target="_blank">
+                <img src="../img/logotips/amphenol.png" alt="Logo Amphenol">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://carbonfabrics.eu/" target="_blank">
+                <img src="../img/logotips/blackfabric.png" alt="Logo black fabric">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://www.boellhoff.com/es-es/" target="_blank">
+                <img src="../img/logotips/bollhoff.png" alt="Logo Bollhoff">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://www.promax.es/" target="_blank">
+                <img src="../img/logotips/promax.png" alt="Logo Promax">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://www.we-online.de/" target="_blank">
+                <img src="../img/logotips/wurthelektronik.png" alt="Logo Wurth Elektronik">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://www.findernet.com/es/espana/" target="_blank">
+                <img src="../img/logotips/finder.png" alt="Logo Finder">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://adamfoods.com/es/" target="_blank">
+                <img src="../img/logotips/adamfoods.png" alt="Logo Adam Foods">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://www.easycomposites.co.uk/" target="_blank">
+                <img src="../img/logotips/easycomposites.png" alt="Logo Easy Composites">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://www.henkel.es/" target="_blank">
+                <img src="../img/logotips/loctite.png" alt="Logo Loctite">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://melcomposites.es/" target="_blank">
+                <img src="../img/logotips/melcomposites.png" alt="Logo Mel Composites">
+            </a>
+            </div>
+            <div class="petitsponsor">
+                <a href="https://norelem.es/" target="_blank">
+                <img src="../img/logotips/norelem.png" alt="Logo Mel Composites">
+            </a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    
+    <!-- Columna esquerra -->
+    <div class="footer-left">
+      <h3>EUSS Motorsport</h3>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/euss-motorsport" target="_blank">
+          <img src="../img/logolinkedin.png" alt="linkedin">
+        </a>
+        <a href="https://www.instagram.com/eussmotorsport" target="_blank">
+          <img src="../img/logoinstagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>© 2026 EUSS MOTORSPORT. Tots els drets reservats.</p>
+    </div>
+
+    <!-- Columna dreta -->
+    <div class="footer-right">
+      <div class="footer-contact">
+        <a href="mailto:eussmotorsport@campus.euss.org">eussmotorsport@campus.euss.org</a>
+      </div>
+      <div class="footer-address">
+        <a href="https://maps.app.goo.gl/43SEDWNJ5UKTfTBP8" target="_blank">
+          <span>Passeig de Sant Joan Bosco, 74, 08017, Barcelona</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
