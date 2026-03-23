@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Historia | EUSS Motorsport</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../img/logoweb.png">
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="../img/logoblanc.png" alt="Logotipo del equipo" class="logo">
+    </a>
+    <nav>
+        <div class="menu-container">
+            <ul class="main-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equip.html">Equipo</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            </ul>
+
+            <ul class="language-menu">
+                <li><a href="../ca/historia.html"><img src="../img/catala.png" height="15" alt="Català"></a></li>
+                <li><a href="historia.html"><img src="../img/castella.png" height="15" alt="Español"></a></li>
+                <li><a href="../en/historia.html"><img src="../img/angles.png" height="15" alt="English"></a></li>
+            </ul>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir el menú" style="display:none;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+</header>
+<div class="rectangle">
+    <button class="close-menu" aria-label="Cerrar el menú">✕</button>
+    <ul class="side-lang">
+          <li><a href="historia.html"><img src="../img/catala.png" height="20" alt="Català"></a></li>
+    </ul>
+    <ul class="side-pages">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equip.html">Equipo</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="historia.html">Historia</a></li>
+    </ul>
+</div>
+
+<script>
+const toggleBtn   = document.querySelector('.menu-toggle');
+const rectangle   = document.querySelector('.rectangle');
+const closeBtn    = document.querySelector('.close-menu');
+
+toggleBtn.addEventListener('click', () => {
+    rectangle.classList.toggle('active');
+});
+
+closeBtn.addEventListener('click', () => {
+    rectangle.classList.remove('active');
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 800) {
+        rectangle.classList.remove('active');
+    }
+});
+</script>
+<main>
+    <section class="fotopaginafiltre">
+        <h1>Nuestra historia</h1>
+        <img src="../img/sponsorspage.jpg" width="100%" height="auto">
+    </section>
+
+    <section class="fonsverd">
+        <p>Desde 2017 hasta la actualidad, hemos construido cinco coches de carreras monoplaza, desde motores de gasolina hasta baterías y un motor eléctrico. Hemos sido un pequeño equipo que nunca ha temido al cambio, siempre con ganas de aprender, mejorar y esforzarnos por construir con orgullo.</p>
+    </section>
+
+    <section class="textfoto">
+        <div class="txt">
+            <h1>EM-05</h1>
+            <p>El segundo monoplaza eléctrico del equipo. Compitió en dos eventos: Formula Student Spain y Formula Student Portugal. Por primera vez, logró pasar dos de las tres inspecciones, quedando muy cerca de poder competir. Este coche nos permitió realizar pruebas, investigación y desarrollo para preparar el nuevo monoplaza.</p>
+            <div class="logocompeti">
+                <a href="https://www.formulastudent.es/" target="_blank">
+                    <img src="../img/logotips/logofss.png" alt="Logo FSS">
+                </a>
+                <a href="https://www.formulastudent.pt/" target="_blank">
+                    <img src="../img/logotips/logofspt.png" alt="Logo FSPT">
+                </a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/garatge/em05rodant.jpg" alt="Foto del equipo 2019">
+        </div>
+    </section>
+
+    <section class="fotopagina">
+        <img src="../img/garatge/grupal05.jpg" background="none">
+    </section>
+    <section class="textfoto">
+        <div class="txt">
+            <h1>EM-04</h1>
+            <p>Ante el cambio de rumbo que había tomado Formula Student Germany para eliminar la categoría de combustión, el equipo decidió electrificar nuestro monoplaza. Esta decisión supuso un gran reto, y así nació el EM-04, con el que acudimos a Formula Student Spain, donde no logramos pasar la inspección técnica.</p>
+            <div class="logocompeti">
+                <a href="https://www.formulastudent.es/" target="_blank">
+                    <img src="../img/logotips/logofss.png" alt="Logo FSS">
+                </a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/garatge/em04rodant.jpg" alt="Foto del equipo 2019">
+        </div>
+    </section>
+
+    <section class="fotopagina">
+        <img src="../img/garatge/grupal04.jpg" background="none">
+    </section>
+    <section class="textfoto">
+        <div class="txt">
+            <h1>EM-03</h1>
+            <p>Gracias a las mejoras introducidas en el monoplaza y a la experiencia adquirida, el EM-03 ya destacó en competición, logrando el primer puesto en la prueba de eficiencia del Circuit de Barcelona-Catalunya y el segundo puesto en la Formula Student Austria, donde competía por primera vez.</p>
+            <div class="logocompeti">
+                <a href="https://www.formulastudent.es/" target="_blank">
+                    <img src="../img/logotips/logofss.png" alt="Logo FSS">
+                </a>
+                <a href="https://www.formulastudent.at/" target="_blank">
+                    <img src="../img/logotips/logofsa.png" alt="Logo FSA">
+                </a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/garatge/em03rodant.jpg" alt="Foto del equipo 2019">
+        </div>
+    </section>
+
+    <section class="fotopagina">
+        <img src="../img/garatge/grupal03.jpg" background="none">
+    </section>
+    <section class="textfoto">
+        <div class="txt">
+            <h1>EM-02</h1>
+            <p>Tras el éxito del primer coche, el segundo monoplaza fue el primero en participar en dos competiciones, una de ellas la Formula Student Spain y la otra en Italia, en el circuito Ricardo Paletti, siendo esta la primera vez que el equipo participaba en una competición internacional.</p>
+            <div class="logocompeti">
+                <a href="https://www.formulastudent.es/" target="_blank">
+                    <img src="../img/logofss.png" alt="Logo FSS">
+                </a>
+                <a href="https://www.formula-ata.it/" target="_blank">
+                    <img src="../img/logotips/logoata.png" alt="Logo FSPT">
+                </a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/garatge/em02rodant.jpg" alt="Foto del equipo 2019">
+        </div>
+    </section>
+
+    <section class="fotopagina">
+        <img src="../img/garatge/grupal02.jpg" background="none">
+    </section>
+    <section class="textfoto">
+        <div class="txt">
+            <h1>EM-01</h1>
+            <p>Con la fundación del equipo y dos años de desarrollo, fue el primer monoplaza del equipo, con un motor de combustión, participó en Formula Student Spain en el Circuit de Barcelona-Catalunya, logrando pasar el escrutinio en el primer año de competición.</p>
+            <div class="logocompeti">
+                <a href="https://www.formulastudent.es/" target="_blank">
+                    <img src="../img/logotips/logofss.png" alt="Logo FSS">
+                </a>
+            </div>
+        </div>
+        <div class="img">
+            <img src="../img/garatge/em01rodant.jpg" alt="Foto del equipo 2019">
+        </div>
+    </section>
+
+    <section class="fotopagina">
+        <img src="../img/garatge/grupal01.jpg" background="none">
+    </section>
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>EUSS Motorsport</h3>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/euss-motorsport" target="_blank">
+          <img src="../img/logolinkedin.png" alt="linkedin">
+        </a>
+        <a href="https://www.instagram.com/eussmotorsport" target="_blank">
+          <img src="../img/logoinstagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+    <div class="footer-copy">
+        <p>© 2026 EUSS MOTORSPORT. Todos los derechos reservados.</p>
+    </div>
+    <div class="footer-right">
+      <div class="footer-contact">
+        <a href="mailto:eussmotorsport@campus.euss.org">eussmotorsport@campus.euss.org</a>
+      </div>
+      <div class="footer-address">
+        <a href="https://maps.app.goo.gl/43SEDWNJ5UKTfTBP8" target="_blank">
+          <span>Passeig de Sant Joan Bosco, 74, 08017, Barcelona</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

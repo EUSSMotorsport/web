@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Índice | EUSS Motorsport</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../img/logoweb.png">
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="../img/logoblanc.png" alt="Logotipo del equipo" class="logo">
+    </a>
+    <nav>
+        <div class="menu-container">
+            <ul class="main-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equip.html">Equipo</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            </ul>
+            <ul class="language-menu">
+                <li><a href="../ca/index.html"><img src="../img/catala.png" height="15" alt="Català"></a></li>
+                <li><a href="index.html"><img src="../img/castella.png" height="15" alt="Español"></a></li>
+                <li><a href="../en/index.html"><img src="../img/angles.png" height="15" alt="English"></a></li>
+            </ul>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir el menú" style="display:none;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+</header>
+<div class="rectangle">
+    <button class="close-menu" aria-label="Cerrar el menú">✕</button>
+    <ul class="side-lang">
+          <li><a href="index.html"><img src="../img/catala.png" height="20" alt="Català"></a></li>
+    </ul>
+    <ul class="side-pages">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equip.html">Equipo</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="historia.html">Historia</a></li>
+    </ul>
+</div>
+
+<script>
+const toggleBtn   = document.querySelector('.menu-toggle');
+const rectangle   = document.querySelector('.rectangle');
+const closeBtn    = document.querySelector('.close-menu');
+
+toggleBtn.addEventListener('click', () => {
+    rectangle.classList.toggle('active');
+});
+
+closeBtn.addEventListener('click', () => {
+    rectangle.classList.remove('active');
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 800) {
+        rectangle.classList.remove('active');
+    }
+});
+</script>
+
+<main>
+    <section class="fotopaginafiltre">
+        <h1>EUSS Motorsport</h1>
+        <img class="slide" src="../img/PP0.jpg" alt="Foto 1">
+        <img class="slide" src="../img/PP1.jpg" alt="Foto 2"> 
+        <img class="slide" src="../img/PP2.jpg" alt="Foto 3">
+        <img class="slide" src="../img/PP3.jpg" alt="Foto 4">
+    </section>
+
+    <section class="main-sponsor">
+        <a href="https://www.euss.cat" target="_blank">
+            <img src="../img/logotips/euss.png" alt="Foto 5">
+        </a>
+        <a href="https://www.ctengineeringgroup.com/" target="_blank">
+            <img src="../img/logotips/ctingenieros.png" alt="Foto 6">
+        </a>
+        <a href="http://www.purepcb.co.uk/" target="_blank">
+            <img src="../img/logotips/purepcb.png" alt="Foto 8">
+        </a>
+        <a href="https://www.wattius.com/" target="_blank">
+            <img src="../img/logotips/wattius.png" alt="Foto 7">
+        </a>
+        <a href="https://www.hummel.es/" target="_blank">
+            <img src="../img/logotips/hummel.png" alt="Foto 10">
+        </a>
+    </section>
+
+    <section class="fonsverd" style="padding: 1rem;">
+    </section>
+    <section class="fotopagina">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="../img/videointro.MOV" type="video/mp4">
+            Tu navegador no soporta la reproducción de vídeos.
+        </video>
+    </section>
+    <section class="fonsverd" style="padding: 1rem;">
+    </section>
+
+    <section class="textfoto">
+        <div class="txt">
+            <h1>¿Quiénes somos?</h1>
+            <p>Somos el equipo Formula Student de la Escuela Universitaria Salesiana de Sarrià, fundado en 2017. Durante estos años, hemos construido cinco monopostos de competición. En 2022, el equipo dio un giro al pasar a un monoplaza eléctrico. Desde entonces, seguimos aprendiendo y luchando por la movilidad eléctrica. Somos un grupo de estudiantes de diferentes carreras, unidos por la pasión por los motores y la competición. Trabajamos en equipo para diseñar, construir y competir con nuestro monoplaza.</p>
+        </div>
+        <div class="img">
+            <img src="../img/fotoem06.jpg" alt="Foto 11">
+        </div>
+    </section>
+
+    <section class="fonsverd">
+        <div class="graellamembres">
+            <div class="membre">
+                <img src="../img/empleados.png" alt="Logo Formula Student" style="border-radius:0px; border: 0px; width: 100px; height: 100px;">
+                <p style="font-size: 1.5rem; font-weight: bold;">+50 personas en equipo</p>
+            </div>
+            <div class="membre">
+                <img src="../img/calendario-reloj.png" alt="Logo Formula Student" style="border-radius:0px; border: 0px; width: 100px; height: 100px;">
+                <p style="font-size: 1.5rem; font-weight: bold;">9 años de experiencia</p>
+            </div>
+            <div class="membre">
+                <img src="../img/globo.png" alt="Logo Formula Student" style="border-radius:0px; border: 0px; width: 100px; height: 100px;">
+                <p style="font-size: 1.5rem; font-weight: bold;">4 países visitados</p>
+            </div>
+            <div class="membre">
+                <img src="../img/apreton-de-manos.png" alt="Logo Formula Student" style="border-radius:0px; border: 0px; width: 100px; height: 100px;">
+                <p style="font-size: 1.5rem; font-weight: bold;">36 patrocinadores</p>
+            </div>
+        </div>
+    </section>
+    <section class="textfoto">
+        <div class="imgv" style="padding-left: 2rem;">
+            <img src="../img/newsletterdes25.jpg" alt="Newsletter Diciembre 2025">
+        </div>
+        <div class="txt">
+            <h1>Noticias</h1>
+            <p>Ya está disponible nuestro <b>último boletín informativo</b>, donde podrás encontrar todas las <b>noticias</b> del equipo, nuestros avances en el proyecto EM-06 y lo más destacado de los últimos meses. ¡No te pierdas esta edición, repleta de información interesante sobre nuestro camino hacia una <b>nueva temporada!</b></p>
+            <a href="../img/CAT_Newsletter 1r trimestre 2025-26.pdf" download="Newsletter_EUSS_Diciembre_2025.pdf" style="justify-content: center; display: flex;">
+                Descargar PDF
+            </a>
+        </div>
+    </section>
+    
+</main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>EUSS Motorsport</h3>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/euss-motorsport" target="_blank">
+          <img src="../img/logolinkedin.png" alt="linkedin">
+        </a>
+        <a href="https://www.instagram.com/eussmotorsport" target="_blank">
+          <img src="../img/logoinstagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>© 2026 EUSS MOTORSPORT. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-contact">
+        <a href="mailto:eussmotorsport@campus.euss.org">eussmotorsport@campus.euss.org</a>
+      </div>
+      <div class="footer-address">
+        <a href="https://maps.app.goo.gl/43SEDWNJ5UKTfTBP8" target="_blank">
+          <span>Passeig de Sant Joan Bosco, 74, 08017, Barcelona</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 5000);
+</script>
+
+</body>
+</html>

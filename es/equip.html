@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Equipo | EUSS Motorsport</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" type="image/png" href="../img/logoweb.png">
+</head>
+<body>
+<header>
+    <a href="index.html">
+        <img src="../img/logoblanc.png" alt="Logotip de l'equip" class="logo">
+    </a>
+    <nav>
+        <div class="menu-container">
+            <ul class="main-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="equip.html">Equipo</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="historia.html">Historia</a></li>
+            </ul>
+
+            <ul class="language-menu">
+                    <li><a href="../ca/equip.html"><img src="../img/catala.png" height="20" alt="Català"></a></li>
+                    <li><a href="equip.html"><img src="../img/castella.png" height="20" alt="Español"></a></li>
+                    <li><a href="../en/equip.html"><img src="../img/angles.png" height="20" alt="English"></a></li>
+                </ul>
+        </div>
+        <button class="menu-toggle" aria-label="Obre el menú" style="display:none;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </nav>
+</header>
+<div class="rectangle">
+    <button class="close-menu" aria-label="Tanca el menú">✕</button>
+    <ul class="side-lang">
+          <li><a href="equip.html"><img src="../img/catala.png" height="20" alt="Català"></a></li>
+          </ul>
+    <ul class="side-pages">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="equip.html">Equipo</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="historia.html">Historia</a></li>
+    </ul>
+</div>
+
+<script>
+const toggleBtn   = document.querySelector('.menu-toggle');
+const rectangle   = document.querySelector('.rectangle');
+const closeBtn    = document.querySelector('.close-menu');
+
+// Obrir / tancar amb el botó principal
+toggleBtn.addEventListener('click', () => {
+    rectangle.classList.toggle('active');
+});
+
+// Tancar amb la creu
+closeBtn.addEventListener('click', () => {
+    rectangle.classList.remove('active');
+});
+
+// Si s’amplia la finestra a desktop, s’oculta el menú
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= 800) {
+        rectangle.classList.remove('active');
+    }
+});
+</script>
+<main>
+    <section class="fotopaginafiltre">
+        <h1>Nuestro equipo</h1>
+        <img src="../img/fotoequip.jpg" alt="Foto de l'equip">
+    </section>
+
+    <section class="fonsverd">
+        <p>EUSS Motorsport está formado por 50 estudiantes de ingeniería de la Universidad Salesiana de Sarri. Procedentes de diversos programas de ingeniería, como ingeniería mecánica, electrónica, automotriz e industrial, formamos un equipo diverso con una amplia gama de conocimientos, lo que nos permite crear un monoplaza eléctrico para competir.</p>
+    </section>
+
+    <section class="textfoto" alt="departament ES">
+        <div class="txt">
+            <h1>Departamento de Electrónica</h1>
+            <p class="tgrs">El Departamento de Electrónica es responsable del diseño y la fabricación de las placas de circuito impreso que gestionan el control, la seguridad y la gestión de los sensores del coche. También se encarga de las comunicaciones CANBUS y del almacenamiento de datos para su posterior análisis. Asimismo, se ocupa del diseño y el montaje del cableado y la disposición de los conectores de todo el vehículo.</p>
+        </div>
+        <div class="img">
+            <img src="../img/es/grupes.jpg" alt="Foto grupal electrical">
+        </div>
+    </section>
+
+    <section class="fonsverd" alt="membres ES">
+        <div class="graellamembres">
+        <div class="membre">
+            <img src="../img/es/martixucla.jpg" alt="Martí Xuclà">
+            <h1>Martí Xuclà</h1>
+            <p>Jefe de Electrónica</p>
+            <a href="https://www.linkedin.com/in/mart%C3%AD-xucl%C3%A0-pinyol-9a8791267/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Martí Xuclà" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/es/andreubalaguer.jpg" alt="Andreu Balaguer">
+            <h1>Andreu Balaguer</h1>
+            <p>División de PCB</p>
+            <a href="https://www.linkedin.com/in/andreu-balaguer-438bb2307/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Andreu Balaguer" class="linkedin">
+            </a>
+        </div><div class="membre">
+            <img src="../img/es/adriabalaguer.jpg" alt="Adrià Balaguer">
+            <h1>Adrià Balaguer</h1>
+            <p>División de PCB</p>
+            <a href="https://www.linkedin.com/in/adria-balaguer-gras-987197361/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Adrià Balaguer" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/es/ainavives.jpg" alt="Aina Vives">
+            <h1>Aina Vives</h1>
+            <p>División de PCB</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Aina Vives" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/es/guillemvilchez.jpg" alt="Guillem Vílchez">
+            <h1>Guillem Vílchez</h1>
+            <p>División de Comunicaciones</p>
+            <a href="https://www.linkedin.com/in/guillem-vilchez-boix-3b0647239/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Guillem Vílchez" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/es/oriolcasanoves.jpg" alt="Oriol Casanoves">
+            <h1>Oriol Casanova</h1>
+            <p>División de Comunicaciones</p>
+            <a href="https://www.linkedin.com/in/oriol-casanova-925320215/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Oriol Casanoves" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/es/alejandrocanas.jpg" alt="Alejandro Cañas">
+            <h1>Alejandro Cañas</h1>
+            <p>División de Comunicaciones</p>
+            <a href="https://www.linkedin.com/in/alejandro-ca%C3%B1as-villal%C3%B3n-3a6290329/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Alejandro Cañas" class="linkedin">
+            </a>
+        </div>
+        </div>
+    </section>
+
+        <section class="textfoto" alt="departament PT">
+        <div class="txt">
+            <h1>Departamento de Powertrain</h1>
+            <p class="tgrs">El Departamento de Powertrain es responsable del diseño y la fabricación de la batería de alto voltaje del coche, que suministra la energía necesaria para su funcionamiento. También se encarga de la configuración del inversor y del funcionamiento del motor.</p>
+        </div>
+        <div class="img">
+            <img src="../img/pt/gruppt.jpg" alt="Foto grupal Powertrain">
+        </div>
+    </section>
+
+    <section class="fonsverd" alt="membres PT">
+        <div class="graellamembres">
+        <div class="membre">
+            <img src="../img/pt/hectorjimenez.jpg" alt="Héctor Jiménez">
+            <h1>Héctor Jiménez</h1>
+            <p>Jefe de Powertrain</p>
+            <a href="https://www.linkedin.com/in/h%C3%A9ctor-jim%C3%A9nez-s%C3%A1nchez-130295238/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Héctor Jiménez" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/pt/janleon.jpg" alt="Jan León">
+            <h1>Jan León</h1>
+            <p>Miembro de Powertrain</p>
+            <a href="https://www.linkedin.com/in/jan-le%C3%B3n-par%C3%A9-3472ab311/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Jan León" class="linkedin">
+            </a>
+        </div><div class="membre">
+            <img src="../img/pt/jordipirla.jpg" alt="Jordi Pirla">
+            <h1>Jordi Pirla</h1>
+            <p>Miembro de Powertrain</p>
+            <a href="https://www.linkedin.com/in/jordi-pirla-35ab82367/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Jordi Pirla" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/pt/ericcervera.jpg" alt="Eric Cervera">
+            <h1>Erik Cervera</h1>
+            <p>Miembro de Powertrain</p>
+            <a href="https://www.linkedin.com/in/erik-cervera-titos-874a78299/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Eric Cervera" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/pt/oriolfarre.jpg" alt="Oriol Farré">
+            <h1>Oriol Farré</h1>
+            <p>Miembro de Powertrain</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Oriol Farré" class="linkedin">
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <section class="textfoto" alt="departament DY">
+        <div class="txt">
+            <h1>Departamento de Dinámica</h1>
+            <p class="tgrs">El Departamento de Dinámica es responsable de la simulación y el diseño de la geometría del coche, además de la transmisión, la dirección y los soportes de la suspensión. También se encarga del ajuste fino y la preparación de la configuración del coche.</p>
+        </div>
+        <div class="img">
+            <img src="../img/dy/grupdy.jpg" alt="Foto 11">
+        </div>
+    </section>
+
+    <section class="fonsverd" alt="membres DY">
+        <div class="graellamembres">
+        <div class="membre">
+            <img src="../img/dy/davidmarti.jpg" alt="David Martí">
+            <h1>David Martí</h1>
+            <p>Jefe de Dinámica</p>
+            <a href="https://www.linkedin.com/in/david-marti-martinez/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn David Martí" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/dy/nicolasbernard.jpg" alt="Nicolás Bernard">
+            <h1>Nicolás Bernard</h1>
+            <p>Miembro de Dinámica</p>
+            <a href="https://www.linkedin.com/in/nico-b-1707b0399/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Nicolás Bernard" class="linkedin">
+            </a>
+        </div><div class="membre">
+            <img src="../img/dy/rubengris.jpg" alt="Rubén Gris">
+            <h1>Rubén Gris</h1>
+            <p>Miembro de Dinámica</p>
+            <a href="https://www.linkedin.com/in/rub%C3%A9n-gris-queija-7a8943339/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Rubén Gris" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/dy/ainoamarin.jpg" alt="Ainoa Marín">
+            <h1>Ainoa Marín</h1>
+            <p>Miembro de Dinámica</p>
+            <a href="https://www.linkedin.com/in/ainoa-mar%C3%ADn-alonso-908960357/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Ainoa Marín" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/dy/martihinojosa.jpg" alt="Martí Hinojosa">
+            <h1>Martí Hinojosa</h1>
+            <p>Miembro de Dinámica</p>
+            <a href="https://www.linkedin.com/in/mart%C3%AD-hinojosa-g%C3%B3mez/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Martí Hinojosa" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/dy/marcsantana.jpg" alt="Marc Santana">
+            <h1>Marc Santana</h1>
+            <p>Miembro de Dinámica</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Marc Santana" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/dy/josepoliveras.jpg" alt="Josep Oliveras">
+            <h1>Josep Oliveras</h1>
+            <p>Miembro de Dinámica</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Josep Oliveras" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/dy/adriagalindo.jpg" alt="Adrià Galindo">
+            <h1>Adrià Galindo</h1>
+            <p>Miembro de Dinámica</p>
+            <a href="https://www.linkedin.com/in/adri%C3%A0-galindo-l%C3%B3pez-118554368/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Adrià Galindo" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/dy/pollacruz.jpg" alt="Pol Lacruz">
+            <h1>Pol Lacruz</h1>
+            <p>Miembro de Dinámica</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Pol Lacruz" class="linkedin">
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <section class="textfoto" alt="departament FR">
+        <div class="txt">
+            <h1>Departamento de Chasis</h1>
+            <p class="tgrs">El Departamento de Chasis es responsable del diseño y la fabricación del chasis, así como de otras funciones, como la realización de estudios de ergonomía para los pilotos. El objetivo principal del departamento es garantizar la máxima seguridad con el cortafuegos y el reposacabezas, entre otras cosas, y la rigidez torsional del monoplaza, optimizando el peso mediante el uso de simulaciones por ordenador para mejorar el rendimiento dinámico en la pista.</p>
+        </div>
+        <div class="img">
+            <img src="../img/fr/grupfr.jpg" alt="Foto 11">
+        </div>
+    </section>
+
+    <section class="fonsverd" alt="membres FR">
+        <div class="graellamembres">
+        <div class="membre">
+            <img src="../img/fr/dudachiste.jpg" alt="Maria Eduarda Chiste">
+            <h1>Maria Eduarda Chiste</h1>
+            <p>Jefe de Chasis</p>
+            <a href="https://www.linkedin.com/in/maria-eduarda-chiste-barbosa-478825221/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Maria Eduarda Chiste" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/fr/rafaelgil.jpg" alt="Rafael Gil">
+            <h1>Rafael Gil</h1>
+            <p>Miembro del Departamento de Chasis</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Rafael Gil" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/fr/jimenacheca.jpg" alt="Jimena Checa">
+            <h1>Jimena Checa</h1>
+            <p>Miembro del Departamento de Chasis</p>
+            <a href="https://www.linkedin.com/in/jimena-checa-armijo-a961a31a5/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Jimena Checa" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/fr/iagoaragay.jpg" alt="Iago Aragay">
+            <h1>Iago Aragay</h1>
+            <p>Miembro del Departamento de Chasis</p>
+            <a href="https://www.linkedin.com/in/iago-aragay-rocha-6a8829365/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Iago Aragay" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/fr/hugoportillo.jpg" alt="Hugo Portillo">
+            <h1>Hugo Portillo</h1>
+            <p>Miembro del Departamento de Chasis</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Hugo Portillo" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/fr/nilnieto.jpg" alt="Nil Nieto">
+            <h1>Nil Nieto</h1>
+            <p>Miembro del Departamento de Chasis</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Nil Nieto" class="linkedin">
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <section class="textfoto" alt="departament AE">
+        <div class="txt">
+            <h1>Departamento de aerodinámica</h1>
+            <p class="tgrs">El Departamento de Aerodinámica se dedica al diseño, la fabricación y la validación de tres grupos principales. La carrocería, que cubre la cabina del piloto y los componentes mecánicos del coche; los componentes aerodinámicos, responsables de mejorar la eficiencia del coche en las curvas; y el sistema de refrigeración, encargado de mantener la temperatura adecuada del motor, el inversor y la batería.</p>
+        </div>
+        <div class="img">
+            <img src="../img/ae/grupae.jpg" alt="Foto 11">
+        </div>
+    </section>
+
+    <section class="fonsverd" alt="membres AE">
+        <div class="graellamembres">
+        <div class="membre">
+            <img src="../img/ae/hugogarcia.jpg" alt="Hugo García">
+            <h1>Hugo García</h1>
+            <p>Jefe de Aerodinámica y Diseño del Ala Delantera</p>
+            <a href="https://www.linkedin.com/in/hugo-garc%C3%ADa-hidalgo/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Hugo García" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/sanfirlej.jpg" alt="San Firlej">
+            <h1>San Firlej</h1>
+            <p>Diseño del Ala Delantera</p>
+            <a href="https://www.linkedin.com/in/san-firlej-9839ab296/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn San Firlej" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/sergirequena.jpg" alt="Sergi Requena">
+            <h1>Sergi Requena</h1>
+            <p>Fabricación</p>
+            <a href="https://www.linkedin.com/in/sergi-requena-pedrol-a92aa5367/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Sergi Requena" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/aitorgonzalez.jpg" alt="Aitor González">
+            <h1>Aitor González</h1>
+            <p>Fabricación</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Aitor González" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/ivanmartinez.jpg" alt="Ivan Martínez">
+            <h1>Ivan Martínez</h1>
+            <p>Diseño del Ala Lateral</p>
+            <a href="https://www.linkedin.com/in/iv%C3%A1n-mart%C3%ADnez-p%C3%A9rez-2a9989305/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Ivan Martínez" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/pablopromezio.jpg" alt="Pablo Promezio">
+            <h1>Pablo Provencio</h1>
+            <p>Diseño del Ala Lateral</p>
+            <a href="https://www.linkedin.com/in/pablo-provencio-ruiz-510231397/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Pablo Promezio" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/guillemamoros.jpg" alt="Guillem Amorós">
+            <h1>Guillem Amorós</h1>
+            <p>Diseño de los bajos</p>
+            <a href="https://www.linkedin.com/in/guillem-amor%C3%B3s-i-tod%C3%B3-automotive-engineer/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Guillem Amorós" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/albertopalomares.jpg" alt="Alberto Palomares">
+            <h1>Alberto Palomares</h1>
+            <p>Diseño de la Refrigeración</p>
+            <a href="https://www.linkedin.com/in/alberto-palomares-165484350/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Alberto Palomares" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/guillemamoros2.jpg" alt="Guillem Amorós">
+            <h1>Guillem Amorós</h1>
+            <p>Diseño de la Refrigeración</p>
+            <a href="https://www.linkedin.com/in/guillem-amor%C3%B3s-206211252/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Guillem Amorós" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/miquelfarreny.jpg" alt="Miquel Farreny">
+            <h1>Miquel Farreny</h1>
+            <p>Diseño de la Carrocería</p>
+            <a href="https://www.linkedin.com/in/miquel-farreny-pina-ingenieriamecanica/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Miquel Farreny" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/maxnogareda.jpg" alt="Max Nogareda">
+            <h1>Max Nogareda</h1>
+            <p>Diseño de la Carrocería</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Max Nogareda" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/xaviartero.jpg" alt="Xavi Artero">
+            <h1>Xavi Artero</h1>
+            <p>Diseño del Ala Trasera</p>
+            <a href="https://www.linkedin.com/in/xavier-artero-b83564265/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Xavi Artero" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/luciaarguello.jpg" alt="Lucía Argüello">
+            <h1>Lucía Argüello</h1>
+            <p>Diseño del Ala Trasera</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Lucía Argüello" class="linkedin">
+            </a>
+        </div>
+        </div>
+    </section>
+
+    <section class="textfoto" alt="departament OP">
+        <div class="txt">
+            <h1>Departamento de Operaciones</h1>
+            <p class="tgrs">El Departamento de Operaciones es responsable de la contabilidad del equipo, la logística y el transporte de los miembros y el coche durante las competiciones y eventos, así como de la gestión general del equipo y del personal. También se encarga de preparar el documento de costes, que recopila el coste total del monoplaza.</p>
+        </div>
+        <div class="img">
+            <img src="../img/op/grupop.jpg" alt="Foto 11">
+        </div>
+    </section>
+
+    <section class="fonsverd" alt="membres OP">
+        <div class="graellamembres">
+        <div class="membre">
+            <img src="../img/op/guillemcastellnou.jpg" alt="Guillem Castellnou">
+            <h1>Guillem Castellnou</h1>
+            <p>Jefe de Operaciones</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Guillem Castellnou" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/op/arnauvinas.jpg" alt="Arnau Viñas">
+            <h1>Arnau Viñas</h1>
+            <p>Miembro de Operaciones</p>
+            <a href="https://www.linkedin.com/in/arnau-vi%C3%B1as-5a2432314/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Arnau Viñas" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/op/pedroescolano.jpg" alt="Pedro Escolano">
+            <h1>Pedro Escolano</h1>
+            <p>Miembro de Operaciones</p>
+            <a href="https://www.linkedin.com/in/pedro-escolano-702573390/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Pedro Escolano" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/op/armandneira.jpg" alt="Armand Neira">
+            <h1>Armand Neira</h1>
+            <p>Miembro de Operaciones</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Armand Neira" class="linkedin">
+            </a>
+        </div>
+    </section>
+
+    <section class="textfoto" alt="departament RE">
+        <div class="txt">
+            <h1>Departamento de Relaciones</h1>
+            <p class="tgrs">El Departamento de Relaciones es responsable de gestionar las redes sociales del equipo, implementar el plan de negocio presentado en las competiciones y diseñar el merchandising del equipo.</p>
+        </div>
+        <div class="img">
+            <img src="../img/re/grupre.png" alt="Foto 11">
+        </div>
+    </section>
+
+    <section class="fonsverd" alt="membres RE">
+        <div class="graellamembres">
+        <div class="membre">
+            <img src="../img/es/martixucla.jpg" alt="Martí Xuclà">
+            <h1>Martí Xuclà</h1>
+            <p>Jefe de Marqueting</p>
+            <a href="https://www.linkedin.com/in/mart%C3%AD-xucl%C3%A0-pinyol-9a8791267/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Martí Xuclà" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/hugogarcia.jpg" alt="Hugo García">
+            <h1>Hugo García</h1>
+            <p>Jefe de Marqueting</p>
+            <a href="https://www.linkedin.com/in/hugo-garc%C3%ADa-hidalgo/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Hugo García" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/re/arialegre.jpg" alt="Ariadna Alegre">
+            <h1>Ariadna Alegre</h1>
+            <p>Miembro de Marqueting</p>
+            <a href="https://www.linkedin.com/in/ariadna-alegre-miralles-656931372/" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Ariadna Alegre" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/re/marioporras.jpg" alt="Mario Porras">
+            <h1>Mario Porras</h1>
+            <p>Miembro de Marqueting</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Mario Porras" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/op/pierrepeytral.jpg" alt="Pierre Peytral">
+            <h1>Pierre Peytral</h1>
+            <p>Miembro de Marqueting</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn Pierre Peytral" class="linkedin">
+            </a>
+        </div>
+        <div class="membre">
+            <img src="../img/ae/sanfirlej.jpg" alt="San Firlej">
+            <h1>San Firlej</h1>
+            <p>Miembro de Marqueting</p>
+            <a href="" target="_blank">
+                <img src="../img/logolinkedin.png" alt="LinkedIn San Firlej" class="linkedin">
+            </a>
+        </div>
+    </section>
+
+    <section class="fotopagina">
+        <img src="../img/garatge/grupal05.jpg" background="none">
+    </section>
+
+</main>
+<footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-left">
+      <h3>EUSS Motorsport</h3>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/company/euss-motorsport" target="_blank">
+          <img src="../img/logolinkedin.png" alt="linkedin">
+        </a>
+        <a href="https://www.instagram.com/eussmotorsport" target="_blank">
+          <img src="../img/logoinstagram.png" alt="Instagram">
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>© 2026 EUSS MOTORSPORT. Todos los derechos reservados.</p>
+    </div>
+
+    <div class="footer-right">
+      <div class="footer-contact">
+        <a href="mailto:eussmotorsport@campus.euss.org">eussmotorsport@campus.euss.org</a>
+      </div>
+      <div class="footer-address">
+        <a href="https://maps.app.goo.gl/43SEDWNJ5UKTfTBP8" target="_blank">
+          <span>Passeig de Sant Joan Bosco, 74, 08017, Barcelona</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
